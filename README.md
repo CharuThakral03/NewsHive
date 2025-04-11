@@ -1,46 +1,57 @@
-PS E:\2nd Sem Programs\NewsHive> git pull origin main
-remote: Enumerating objects: 55, done.
-remote: Counting objects: 100% (46/46), done.
-remote: Compressing objects: 100% (27/27), done.
-remote: Total 55 (delta 26), reused 33 (delta 19), pack-reused 9 (from 1)
-Unpacking objects: 100% (55/55), 16.59 KiB | 73.00 KiB/s, done.
-From https://github.com/AdityaPrmr/NewsHive
- * branch            main       -> FETCH_HEAD
-   eb92e1a..5c7d205  main       -> origin/main
-Updating eb92e1a..5c7d205
-error: Your local changes to the following files would be overwritten by merge:
-        package-lock.json
-Please commit your changes or stash them before you merge.
-Aborting
-PS E:\2nd Sem Programs\NewsHive> git reset --hard
->> git pull origin main
->>
-HEAD is now at eb92e1a modified
-From https://github.com/AdityaPrmr/NewsHive
- * branch            main       -> FETCH_HEAD
-Updating eb92e1a..5c7d205
-Fast-forward
- README.md                          |  59 ++++++++++++--
- package-lock.json                  | 137 +++++++++++++++++++++++++++++++
- package.json                       |   1 +
- src/App.jsx                        |   6 ++
- src/Pages/Home.jsx                 |   2 +-
- src/dashboard/Featured/Dis.jsx     | 157 +++++++++++++++++++++++++++++++++++
- src/dashboard/Featured/Live.jsx    | 162 +++++++++++++++++++++++++++++++++++++
- src/dashboard/layout/SideBar.jsx   |   4 +-
- src/dashboard/pages/AdminIndex.jsx |  29 ++++++-
- src/dashboard/pages/Login.jsx      |   2 +-
- src/dashboard/pages/Profile.jsx    |  27 +++++++
- 11 files changed, 574 insertions(+), 12 deletions(-)
- create mode 100644 src/dashboard/Featured/Dis.jsx
- create mode 100644 src/dashboard/Featured/Live.jsx
- create mode 100644 src/dashboard/pages/Profile.jsx
-PS E:\2nd Sem Programs\NewsHive> git add .
->> git commit -m "Made some updates"
->> git push origin main
->>
-On branch main
-Your branch is up to date with 'origin/main'.
+# NewHive
 
-nothing to commit, working tree clean
-Everything up-to-date
+![NewHive Banner](src/assets/logo.png)
+
+## 🚀 About the Project
+News Hive is an innovative MERN stack web application designed to streamline news reporting and publishing. The platform empowers journalists to submit articles, editors to review and publish content, and readers to access categorized news in real time.
+
+## 🛠️ Features
+
+- ✅ **User Authentication & Role-Based Access Control** – Secure login with JWT authentication for different user roles (Admin, Editor, Reporter).  
+- ✅ **Article Submission & Editing** – Journalists can submit, edit, and manage their news articles.  
+- ✅ **Editorial Review System** – Editors can approve, reject, or modify articles before publishing.  
+- ✅ **Real-Time Updates** – Published articles appear instantly, ensuring up-to-date news coverage.  
+- ✅ **Responsive UI** – Built using React.js & Tailwind CSS for an intuitive and seamless experience.  
+- ✅ **Optimized API & Database Queries** – Efficient Axios API calls and MongoDB indexing for faster performance.  
+- ✅ **Secure Backend** – Developed using Node.js & Express.js, with MongoDB Atlas for cloud-based data storage.
+  
+## 🔗 Live Demo
+[Click here](https://adityaprmr.github.io/NewsHive/) to see NewHive in action!
+
+## 🏗️ Tech Stack
+- **Frontend:** HTML, CSS, JavaScript.
+- **Backend:** Node.js, Express.
+- **Database:** MongoDB.
+
+## 👨‍💻 Contributors
+Meet the team behind **NewHive**:
+
+| Name | GitHub | LinkedIn |
+|------|--------|---------|
+| **Aditya Parmar** | [@AdityaPrmr](https://github.com/AdityaPrmr) | [LinkedIn](https://www.linkedin.com/in/adityaparmar-) |
+| **Anuj Mondal** | [@GitHub](https://github.com/AnujMondal) | [LinkedIn](www.linkedin.com/in/anujmondal) |
+| **Nandini Kapil** | [@GitHub](https://github.com/Nandini0029) | [LinkedIn](https://www.linkedin.com/in/nandini-kapil-3704b3242) |
+| **Charu Thakral** | [@GitHub](https://github.com/CharuThakral03) | [LinkedIn](https://www.linkedin.com/in/charuthakral) |
+
+## 📌 Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/newhive.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd newhive
+   ```
+3. Install dependencies:
+   ```sh
+   npm install  # or yarn install
+   ```
+4. Run the development server:
+   ```sh
+   npm start  # or yarn start
+   ```
+
+
+
+## 📬 Contact
+For any queries or collaborations, reach out to us at [parmar2100parmar@gmail.com][anujmondal2504@gmail.com][nandinikapil2902@gmail.com][charuthakral3@gmail.com].
